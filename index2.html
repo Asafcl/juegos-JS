@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<a href="index.html">BACK</a>
+<body id="bodyTag">
+    
+    
+   <form>
+  <label for="pregunta1" id="label1">Ingrese una pregunta:</label>
+  <input type="text" id="pregunta1" name="pregunta1" maxlength="60" required><br>
+  
+  <label for="respuesta11" id="label2">Ingrese la primera respuesta:</label>
+  <input type="text" id="respuesta11" name="respuesta11" maxlength="45" required><br>
+
+  <label for="respuesta22" id="label3"> Ingrese la segunda respuesta:</label>
+  <input type="text" id="respuesta22" name="respuesta22" maxlength="45" required><br>
+
+  <label for="respuesta33" id="label4">Ingrese la tercera respuesta:</label>
+  <input type="text" id="respuesta33" name="respuesta33" maxlength="45" required><br>
+
+  <label for="respuestaCorrecta" id="label5">Ingrese la respuesta correcta (1, 2 o 3):</label>
+  <input type="number" id="respuestaCorrecta" name="respuestaCorrecta" min="1" max="3" required><br>
+
+  <button  id="buttonIngresoDatos" onclick="ingresoDatos()">CARGAR PREGUNTA</button>
+  <button onclick="mostrarPregunta()" id="buttonGame">COMENZAR</button>
+  </form>
+
+  
+<div id="allButton">
+
+    <header id="headerChampinon">BIENVENIDO A SU EXAMEN</header>
+    
+    <p id="pregunta"></p>
+    <button id="respuesta1"></button>
+    <button id="respuesta2" style="color: rgb(8, 170, 219);" ></button>
+    <button id="respuesta3" style="color: rgb(14, 184, 14);"></button>
+ 
+</div>
+
+
+<div id="finalResult">
+    <p id="resp1Final">TODAS LAS RESPUESTAS HAN SIDO RESPONDIDAS</p>
+    <p id="resp2Final"></p>
+    <p id="resp3Final"></p>
+</div>
+
+<script src="script2.js"></script>
+</body>
+</html>
