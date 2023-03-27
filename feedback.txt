@@ -1,3 +1,5 @@
+Agregar a tags de boton su respectivo atributo de tipo y titulo.
+
 Implementar solución que indique cuál fue la respuesta correcta / incorrecta al finalizar el cuestionario. 
 
 Trabajar el  "back" button  en CSS y alinear los input fields para generar mayor cohesión en cuanto diseño. 
